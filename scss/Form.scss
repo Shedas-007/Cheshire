@@ -1,0 +1,58 @@
+.form {
+    position: absolute;
+    background-color: white;
+    z-index: 0;
+    display: inline-block;
+    border: 3px solid red;
+    border-radius: 5px; //cia bet koks uzdetas
+}
+
+
+.form_name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    background-color: #F5F5F5;
+    color: black;
+    font-weight: 500;
+
+    span {
+        color:#E27866;
+        text-transform: uppercase;
+    }
+}
+
+.formlist {
+    list-style-type: none;
+}
+
+.formlist li input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px;
+}
+
+.getstarted {
+    background-color: #41D395;
+    cursor: pointer;
+}
+.getstarted p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.radio {
+ //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio
+
+}
+
+.container1 {
+    display: flex;
+    justify-content: flex-end;
+    
+}
