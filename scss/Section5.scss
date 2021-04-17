@@ -1,0 +1,32 @@
+.section5 {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 670px;
+    border: solid black 2px;
+}
+.section5_header {
+    text-align: center;
+}
+
+.features  {
+    display: flex;
+    /* width: 80%; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+  .features div {
+      width: 25%;
+  }
+
+  .section5 h2, .section5 p {
+      color: black;
+  }
+
+  .section5 h4 {
+      color: #E27866;
+  }
