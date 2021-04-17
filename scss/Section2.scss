@@ -1,0 +1,29 @@
+.section2 {
+    position: relative;
+    z-index: 2;
+    top: 620px;
+    border: 2px solid red;
+}
+
+
+
+.section2_text {
+    text-align: left;
+    width: 50%;
+
+    h3, p {
+        color: #333333;
+    }
+}
+
+.media_logo {
+    width: 30px;
+    height: 30px;
+}
+
+.social_media {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
