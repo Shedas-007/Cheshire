@@ -1,0 +1,30 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body {
+    margin: 0;
+}
+
+@import "colors.scss";
+@import "Header.scss";
+@import "Section1.scss";
+@import "Form.scss";
+@import "Section2.scss"
+
+
+// .container {
+//     max-width: 1140px;
+//     width: 100%;
+//     margin: 0 auto;
+//     padding: 0 20px;
+//     box-sizing: border-box;
+//       display: flex;
+//     justify-content: space-between;
+// } 
+// // Konteineris eina ant virsaus visu sekcijos elementu, kurie turi buti ne iki psl. krasto. tai man sita reikia uzsideti pas save, taip pat kitam scss faile yra .container su display flex ir justify content space between. Ka tai reiskia?
+
+//   .container {
+//     
+//   }
