@@ -19,6 +19,7 @@
     box-sizing: border-box;
   }
   
+  @import "mixins.scss";
   @import "Header.scss";
   @import "Hero.scss";
   @import "components/custom-section";
@@ -45,9 +46,10 @@
 
 @import "Form.scss";
 @import "Social_media.scss";
-// @import "Section4.scss";
-// @import "Section5.scss";
-// @import "Section6.scss";
+@import "Footer.scss";
+@import "Section4.scss";
+@import "About.scss";
+@import "Subscription.scss";
 
 
 // .container {
