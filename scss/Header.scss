@@ -1,50 +1,174 @@
 header {
-    // display: flex;
-    position: fixed;
-    z-index: 1;
-    background-color: black;
-    // justify-content: space-evenly;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
-}
-
-.logo {
-    position: absolute;
-    left: 100px;
-    // logotipas eina ne per visa ploti, o daugiau!
-    
-}
-
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style-type: none;
-}
-    
-.menu li {
-    padding-right: 1rem;
-    color: $menu-text-color;
-    cursor: pointer;
-
-    &:hover {
-        color: white;
-
-        &:before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            background: #ff3535;
-            bottom: 0;
-            border-bottom: solid red 5px;
-            // UZVEDUS PELE BLOGAI ZYMISI RAUDONA SPALVA!!!
-        }
+    background-color: var(--dark);
+    z-index: 3;
+    box-shadow: 0 0 5px #000;
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
+  
+    .logo {
+      position: relative;
+      z-index: 1;
+      width: 120px;
+      height: 52px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    nav {
+      @media (max-width: 700px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+      }
+  
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+  
+      ul {
+        display: flex;
+  
+        @media (max-width: 700px) {
+          flex-direction: column;
+          text-align: center;
+          padding: 0;
+        }
+  
+        li {
+          list-style: none;
+          font-size: 14px;
+  
+          &:not(:last-child) {
+            margin-right: 45px;
+  
+            @media (max-width: 700px) {
+              margin-right: 0;
+              margin-bottom: 35px;
+              font-size: 16px;
+            }
+          }
+        }
+  
+        a {
+          color: #B8B8B8;
+          text-decoration: none;
+        }
+      }
+    }
+  
+    .menu-icon {
+      position: relative;
+      display: none;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      z-index: 1;
+      transition: 1s ease-in-out;
+  
+      &.active {
+        transform: rotate(270deg) scaleX(1.5) scaleY(1.5);
+        background-color: #E27866;
+
+      }
+  
+      @media (max-width: 700px) {
+        display: inline-block;
+      }
+    }
+  }
+  
+  .menu-list li a:hover {
+    color: white;
+    transition: 0.3s;
 }
 
+@mixin mark-menu {
+   content: '';
+   position:absolute;
+   width: 61px;
+   // background: #ff3535;
+   bottom: 0;
+   border-bottom: solid #E27866 2px;
+   // UZVEDUS PELE BLOGAI ZYMISI RAUDONA SPALVA. NEVEIKIA ANT BEFORE MIXIN padaryta su width kiekvieno menu atskirai
+   }
+
+.menu1:hover:before {
+   @include mark-menu;
+}
+
+.menu2:hover:before {
+   @include mark-menu;
+   width: 43px;
+}
+
+.menu3:hover:before {
+   @include mark-menu;
+   width: 50px;
+}
+
+.menu4:hover:before {
+   @include mark-menu;
+   width: 57px;
+}
+
+.menu5:hover:before {
+   @include mark-menu;
+   width: 56px;
+}
+
+
+// header {
+//     // display: flex;
+//     position: fixed;
+//     z-index: 1;
+//     background-color: black;
+//     // justify-content: space-evenly;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 50px;
+// }
+
+// .logo {
+//     position: absolute;
+//     left: 100px;
+//     // logotipas eina ne per visa ploti, o daugiau!
+    
+// }
+
+
+// .menu {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     list-style-type: none;
+// }
+    
+// .menu-list li {
+//     padding-right: 1rem;
+//     color: $menu-text-color;
+//     cursor: pointer;
+
+     
+ 
     
 
 

@@ -1,19 +1,106 @@
+form {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 30px;
+    padding-left: 50px;
+  
+    h4 {
+      font-size: 16px;
+      color: var(--dark);
+      font-weight: bold;
+    }
+  
+    .custom-radio {
+      label {
+        display: inline-flex;
+        justify-content: flex-start;
+        cursor: pointer;
+  
+        .radio {
+          position: relative;
+          width: 13px;
+          height: 13px;
+          margin-right: 5px;
+          border-radius: 50%;
+          border: 1.5px solid #41d395;
+          opacity: 0.5;
+          transition: 0.3s ease-in-out;
+  
+          &:after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: #41d395;
+            border-radius: 50%;
+            transform-origin: center center;
+            transform: scale(0);
+            transition: 0.3s ease-in-out;
+          }
+        }
+  
+        span {
+          color: var(--dark);
+          margin-right: 10px;
+        }
+      }
+  
+      input {
+        display: none;
+  
+        &:checked + label {
+          .radio {
+            opacity: 1;
+  
+            &:after {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+//   .container1 {
+//     display: flex;
+//     justify-content: flex-end;
+    
+// }
 .form {
-    position: absolute;
+    position: relative;
     background-color: white;
-    z-index: 0;
-    display: inline-block;
-    border: 3px solid red;
+    border-radius: 10px;
+    margin-top: 15px;
+    // border: red solid 2px;
+    // z-index: 0;
+    width: 360px;
+    height: 400px;
+    // display: inline-block;
+    // border: 3px solid red;
     border-radius: 5px; //cia bet koks uzdetas
 }
 
 
 .form_name {
+    font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
     background-color: #F5F5F5;
-    color: black;
+    color: var(--dark);
     font-weight: 500;
 
     span {
@@ -22,37 +109,49 @@
     }
 }
 
+.form h3 {
+    color: var(--dark);
+    font-size: 16px;
+    padding-left: 50px;
+}
+
 .formlist {
     list-style-type: none;
+    text-align: center;
+    padding-left:0;    
 }
 
 .formlist li input {
+    font-size: 12px;
+    color: #D8D8D8;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: solid 1px;
+    width: 260px;
+    padding-top: 22px;
+}
+
+::placeholder {
+    color: #D8D8D8;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .getstarted {
     background-color: #41D395;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     cursor: pointer;
-}
-.getstarted p {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-}
-
-.radio {
- //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio
-
-}
-
-.container1 {
-    display: flex;
-    justify-content: flex-end;
+    border-radius: 0px 0px 5px 5px;
     
+    p {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
 }
