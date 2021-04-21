@@ -1,0 +1,16 @@
+@mixin social-media-section {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin social-media-logo {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-right: 102px;
+        }
+    }

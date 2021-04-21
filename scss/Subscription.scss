@@ -1,0 +1,120 @@
+.subscription {
+    position: relative;
+    background-color: #6696E2;
+}
+
+.subscription-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+        margin-top: 90px;
+        margin-bottom: 0;
+        font-size: 36px;
+        color: #FFFFFF;
+        font-weight: 500;
+    }
+
+    h4 {
+        color: #41D395;
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    p {
+        color: FFFFFF;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+.subscription-blocks {
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    margin-top: 90px;
+
+}
+
+.subscription-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+
+.subscription-upper-container {
+    background-color: #3B3B3B;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: #41D395 solid 5px;
+    
+}
+.subscription-container-child {
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    width: 343px;
+    margin-bottom: 108px;
+
+    h2 {
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        padding-top: 14px;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 14px;
+        color: #999999;
+        text-transform: uppercase; 
+    }
+
+    h3 {
+        font-size: 94px;
+        margin-top: 13px;
+        margin-bottom: 5px;
+        font-weight:400;
+        padding: 0;
+        color: #FFFFFF;
+
+        span {
+            font-size: 30px;
+        }
+    }
+}
+
+
+
+.popular {
+    background-color: #41D395;
+
+    h2 {
+        font-size: 14px;
+        font-weight:lighter;
+        margin: 0;
+        text-transform: uppercase; 
+
+    }
+}

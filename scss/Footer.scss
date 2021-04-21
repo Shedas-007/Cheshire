@@ -1,0 +1,29 @@
+footer {
+    background-color: #1C1C1C;
+}
+
+.footer-media-logo {
+    @include social-media-logo;
+    width: 20px;
+    height: 20px;
+    margin-top: 52px;
+    margin-bottom: 51px;
+    
+}
+
+.footer {
+    @include social-media-section;
+}
+
+
+
+.footer-text {
+    
+    position: relative;
+
+    p {
+        font-size: 18px;
+        color: #707070;
+        margin:0;
+    }
+}
