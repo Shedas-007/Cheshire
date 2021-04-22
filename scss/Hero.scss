@@ -1,12 +1,13 @@
 .screen {
-  height: 100vh;
   position: relative;
 }
 
 .hero {
+    display: flex;
+    align-items: center;
     position: relative;
     background: pink;
-    // height: 100vh;
+    height: calc(100vh - 170px);
   
     &:after,
     &-image {
@@ -30,10 +31,10 @@
     .hero-content {
       position: relative;
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: space-between;
-      padding-top: 65px;
-      padding-bottom: 140px;
+      // padding-top: 10px; 
+      // padding-bottom: 140px;
       color: #fff;
       z-index: 1;
   
