@@ -1,0 +1,51 @@
+.about {
+    position: relative;
+}
+.about-header {
+    text-align: center;
+    margin-top: 99px;
+
+    h2 {
+        font-size: 36px;
+        margin: 0;
+        color: #212121;
+    }
+
+    p {
+        font-size: 14px;
+        color: #86878B;
+    }
+}
+
+.about-content  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 122px;
+
+}
+
+  .about h4 {
+      color: #E27866;
+      font-size: 20px;
+  }
+
+  .about-features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 286px;
+
+      p {
+          margin: 0;
+      }
+
+  }
+
+  .about-logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
