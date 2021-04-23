@@ -1,0 +1,74 @@
+.contact {
+    background-color: #E27866;
+}
+
+.contact-form-align {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    // border: red solid 2px;
+    // z-index: 0;
+    width: 390px;
+    height: 314px;
+    // display: inline-block;
+    // border: 3px solid red;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px #3d3d3d;
+
+    @media (max-width: 700px) {
+        width: inherit;
+        height: 314px;
+      }
+
+}
+
+.getsend {
+    display: flex;
+    justify-content: center ;
+    background-color: #41D395;
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    height: 43px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    p {
+        font-size: 15px;
+        padding: 10px 0;
+        margin: 0;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+}
+
+
+.bla h2 {
+    // margin: 0;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+    .bla p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+
+    }
