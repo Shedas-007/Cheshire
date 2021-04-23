@@ -48,7 +48,9 @@
             <img class="hero-image" src="images/hero-min.jpg" alt="">
             <div class="hero-content container">
                 <div>
+                    <div class="hero-logo-responsive">
                     <img src="images/logo.svg" alt="Cheshire County">
+                    </div>
                     <div class="hero-content-text">
                         <div class="hero-content-header">
                             <h2>Explained propriety<br>of out perpetual to you</h2>
@@ -118,7 +120,7 @@
             </div>
         </section>
 
-<!-- SECTIOON 4  -->
+<!-- SECTION 4  -->
 
         <section class="section4">
             <div class="container">
@@ -302,6 +304,8 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
                                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
                                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
                                 penatibus et magnis dis parturient montes.</p>
                             <p></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
@@ -334,7 +338,9 @@
                                 penatibus et magnis dis parturient montes.</p>
                             <p></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                                bibendum laoreet.</p>
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes.</p>
                             </div>
                         </div>
                         <div class="tabs-photo-container">
@@ -358,7 +364,7 @@
 
         <section class="custom-section" id="features">
             <div class="container">
-                <h2 data-aos="flip-down" data-aos-once="false">What our customers are saying</h2>
+                <h2  class="line" data-aos="flip-down" data-aos-once="false">What our customers are saying</h2>
 
                 <!-- Slider main container -->
                 <div class="swiper-container reviews-swiper" data-aos="zoom-in-up" data-aos-once="false">
@@ -392,9 +398,26 @@
                                     <div class="response-bubble">
                                         <p>Lorem ipsum dolor sit amet, 
                                             consectetur adipisicing elit.
-                                            Doloribus accusamus
                                             expedita repellat similique 
                                             odio aspernatur ex.</p>
+                                    </div>
+                                    <div class="avatar-container">
+                                        <div class="image" style="background-image: url('images/biciukas.jpg')">
+                                        </div>
+                                        <div class="avatar-text">
+                                        <h3>John S.</h3>
+                                        <p>Freelancer</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="response-container">
+                                <div class="response">
+                                    <div class="response-bubble">
+                                        <p>Lorem ipsum dolor sit amet, 
+                                            consectetur adipisicing elit.</p>
                                     </div>
                                     <div class="avatar-container">
                                         <div class="image" style="background-image: url('images/biciukas.jpg')">
@@ -436,28 +459,8 @@
                                             consectetur adipisicing elit.
                                             Doloribus accusamus
                                             expedita repellat similique 
-                                            odio aspernatur ex.</p>
-                                    </div>
-                                    <div class="avatar-container">
-                                        <div class="image" style="background-image: url('images/biciukas.jpg')">
-                                        </div>
-                                        <div class="avatar-text">
-                                        <h3>John S.</h3>
-                                        <p>Freelancer</p>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="response-container">
-                                <div class="response">
-                                    <div class="response-bubble">
-                                        <p>Lorem ipsum dolor sit amet, 
-                                            consectetur adipisicing elit.
-                                            Doloribus accusamus
-                                            expedita repellat similique 
-                                            odio aspernatur ex.</p>
+                                            odio aspernatur ex. Lorem ipsum dolor sit amet, 
+                                            consectetur adipisicing elit.</p>
                                     </div>
                                     <div class="avatar-container">
                                         <div class="image" style="background-image: url('images/biciukas.jpg')">
@@ -499,8 +502,54 @@
 
             </div>
 
-        <section id="contact">
+<!-- CONTACT US SECTION -->
 
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="bla">
+                    <h2>Contact us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="contact-form-align">
+                    <div class="contact-form">
+                        <ul class="formlist">
+                            <li>
+                                <input type="text" id="first_name" name="first.name" placeholder="First name" required>
+                            </li>
+                            <li>
+                                <input type="text" id="last_name" name="last.name" placeholder="Last name" required>
+                            </li>
+                            <li>
+                                <input type="tel" id="phone_number" name="phone.number" placeholder="Phone number" required>    
+                            
+                            </li>
+                        </ul>
+                        <div class="form-container">
+                            <form>
+                                <div class="custom-radio">
+                                    <input type="radio" name="subscription" id="sub-personal">
+                                    <label for="sub-personal">
+                                        <div class="radio"></div>
+                                        <span>PERSONAL</span>
+                                    </label>
+                                </div>
+
+                                <div class="custom-radio">
+                                    <input type="radio" name="subscription" id="sub-company">
+                                    <label for="sub-company">
+                                        <div class="radio"></div>
+                                        <span>COMPANY</span>
+                                    </label>
+                                </div>
+                            
+                            </form>
+                        </div>
+                        <div class="getsend">                        
+                            <p>SEND</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
     </main>

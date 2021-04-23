@@ -1,9 +1,11 @@
 .about {
     position: relative;
+    
 }
 .about-header {
     text-align: center;
     margin-top: 99px;
+    
 
     h2 {
         font-size: 36px;
@@ -25,6 +27,12 @@
     margin-top: 65px;
     margin-bottom: 122px;
 
+    @media (max-width: 700px) {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+      }
+
 }
 
   .about h4 {
@@ -37,6 +45,11 @@
       flex-direction: column;
       align-items: center;
       width: 286px;
+
+      @media (max-width: 700px) {
+        width: 100%;
+        margin-top: 20px;
+      }
 
       p {
           margin: 0;
