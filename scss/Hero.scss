@@ -8,6 +8,10 @@
     position: relative;
     background: pink;
     height: calc(100vh - 170px);
+
+    @media (max-width: 700px) {
+      height: inherit;
+    }
   
     &:after,
     &-image {
@@ -37,6 +41,13 @@
       // padding-bottom: 140px;
       color: #fff;
       z-index: 1;
+
+      @media (max-width: 700px) {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+      }
   
       h1 {
         margin: 0;
@@ -46,7 +57,7 @@
         // margin-top: ; - 
         margin-bottom: 23px;
         width: 247px;
-        height: 108px;
+        height: 108px;        
       }
     }
   }
@@ -57,89 +68,45 @@
     margin-top: 0;
     text-align: left;
     margin-bottom: 0;
+
+    @media (max-width: 700px) {
+      font-size: 20px;
+      text-align: center;
+    }
   }
 
   .hero-content-text {
     width: 426px;
+
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      text-align: center;
+    }
+
+    
   }
 
   .hero-content-paragraph {
     width: 651px;
 
+    @media (max-width: 700px) {
+      width: 90%;
+    }
+
     p {
       margin-top: 24px;
-      margin-bottom: 33px; 
+      margin-bottom: 33px;
+      
+      @media (max-width: 700px) {
+        font-size: 12px;
+      }
     }
   }
-  
-  
-
-// // .Photo1 {
-// //     margin: 0;
-// //     width: 100%;
-// //     height: 100vh;
-// //     object-fit: cover;
-// //     object-position: center center;
-// // }
-
-
-// .container {
-//     position: absolute;
-//     width: 100%;
-//     height: 100vh;
-//     margin: 0;
-// }
-
-// .container .Photo1 {
-//     width: 100%;
-//     height: 100%;;
-//     object-fit: cover;
-// }
-
-// .container:before {
-//     content: '';
-//     position: absolute;
-//     top: 50px; // cia nesamone, reikia sutvarkyti
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     opacity: 0.5;
-//     background: #1C1C1C;
-
-// }
-
-// .section1text {
-//     position: absolute;
-//     top: 50px;
-//     border: 2px red solid;
-//     width: 50%;
-//     height: 80vh;
-
-//     div {
-//         padding-top: 100px;
-//     }
-    
-// }
-
-// .logo2 {
-//     position: absolute;
-    
-// }
-
-// h2, p {
-//     color: white;
-// }
-
-// // h2 {
-// //     width: 50%;
-// //     padding-left: 40px;
-// // }
-
-// // p {
-// //     padding-left: 40px;
-// //     padding-right: 40px;
-// // }
-
 
 .button {
     display: inline-block;
@@ -154,4 +121,11 @@
       color: black;
       font-weight: 500;
     }
+}
+
+.hero-logo-responsive {
+  @media (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+  }
 }

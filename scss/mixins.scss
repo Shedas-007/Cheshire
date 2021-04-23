@@ -12,5 +12,10 @@
         
         &:not(:last-child) {
             margin-right: 102px;
+
+            @media (max-width: 700px) {
+                margin-right: 30px;
+              }
+
         }
     }
