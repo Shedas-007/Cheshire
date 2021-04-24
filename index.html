@@ -19,9 +19,9 @@
             </a>
 
             <nav id="navigation">
-                <ul class="menu-list">
+                <ul class="menu-list" id="ftrs">
                     <li>
-                        <a href="#features" class="menu1">Features</a>
+                        <a href="#features" class="menu1" >Features</a>
                     </li>
                     <li>
                         <a href="#about" class="menu2">About</a>
@@ -53,8 +53,7 @@
                     </div>
                     <div class="hero-content-text">
                         <div class="hero-content-header">
-                            <h2>Explained propriety<br>of out perpetual to you</h2>
-                            <h2>____</h2>
+                            <h2>Explained propriety of out perpetual to you</h2>
                         </div>
                         <div class="hero-content-paragraph">
                         <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
@@ -64,7 +63,7 @@
                 </div>
                 <div class="form">
                     <p class="form_name">Try Your <span>Free</span> Trial Today</p>
-                    <h3>Your details</h3>
+                    <h3>Your details</h3>                   
                     <ul class="formlist">
                         <li>
                             <input type="text" id="first_name" name="first.name" placeholder="First name" required>
@@ -73,7 +72,7 @@
                             <input type="text" id="last_name" name="last.name" placeholder="Last name" required>
                         </li>
                         <li>
-                            <input type="tel" id="phone_number" name="phone.number" placeholder="Phone number" required>    
+                            <input type="tel" id="numb" name="phone.number" placeholder="Phone number" required>    
                         
                         </li>
                     </ul>
@@ -95,10 +94,14 @@
                                     <span>YEARLY</span>
                                 </label>
                             </div>
-                        
                         </form>
                     </div>
-                    <div class="getstarted">
+                    <div class="error-container">
+                        <p id="error-surname" class="error"></p>
+                        <p id="error-name" class="error"></p>
+                        <p id="error-number" class="error"></p>
+                        </div>
+                    <div class="getstarted" type="button" onclick="myFunction1(), myFunction2(), myFunction3()">
                         <p>GET STARTED</p>
                     </div>
                 </div>
@@ -130,7 +133,6 @@
                     <div class="section4_text">
                             <div class="section4_text_container1">
                                 <h2>Erat tempor tempus erat malesuada</h2>
-                                <h2><span>_____________</span></h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sita amet lacus accumsan et viverra justo commodo.</p>
                             </div>
                             <div class="section4-text-container">
@@ -158,7 +160,6 @@
         <section class=" container about" id="about">
             <div class="about-header">
                 <h2>Why this is awesome</h2>
-                <h4>________</h4>
                 <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
             </div>
     
@@ -186,8 +187,7 @@
             <section class="subscription" id="subscription">
                 <div class="container">
                     <div class="subscription-header">
-                        <h2>PRICING OPTIONS</h2>
-                        <h4>________</h4>
+                        <h2 >PRICING OPTIONS</h2>
                         <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
                     </div>
                     <div class="subscription-blocks">  
@@ -362,7 +362,7 @@
 
 <!-- FEATURES SECTION -->
 
-        <section class="custom-section" id="features">
+        <section class="features-section" id="features">
             <div class="container">
                 <h2  class="line" data-aos="flip-down" data-aos-once="false">What our customers are saying</h2>
 
@@ -382,11 +382,11 @@
                                             odio aspernatur ex.</p>
                                     </div>
                                     <div class="avatar-container">
-                                        <div class="image" style="background-image: url('images/biciukas.jpg')">
+                                        <div class="image" style="background-image: url('images/People/83.jpg')">
                                         </div>
                                         <div class="avatar-text">
-                                        <h3>John S.</h3>
-                                        <p>Freelancer</p>
+                                        <h3>John Wick</h3>
+                                        <p>Random guy</p>
                                     </div>
                                     </div>
                                 </div>
@@ -402,11 +402,11 @@
                                             odio aspernatur ex.</p>
                                     </div>
                                     <div class="avatar-container">
-                                        <div class="image" style="background-image: url('images/biciukas.jpg')">
+                                        <div class="image" style="background-image: url('images/People/21.jpg')">
                                         </div>
                                         <div class="avatar-text">
-                                        <h3>John S.</h3>
-                                        <p>Freelancer</p>
+                                        <h3>Maria J.</h3>
+                                        <p>Recreation specialist</p>
                                     </div>
                                     </div>
                                 </div>
@@ -420,11 +420,11 @@
                                             consectetur adipisicing elit.</p>
                                     </div>
                                     <div class="avatar-container">
-                                        <div class="image" style="background-image: url('images/biciukas.jpg')">
+                                        <div class="image" style="background-image: url('images/People/74.jpg')">
                                         </div>
                                         <div class="avatar-text">
-                                        <h3>John S.</h3>
-                                        <p>Freelancer</p>
+                                        <h3>Ernest H.</h3>
+                                        <p>Columnist</p>
                                     </div>
                                     </div>
                                 </div>
@@ -441,11 +441,11 @@
                                             odio aspernatur ex.</p>
                                     </div>
                                     <div class="avatar-container">
-                                        <div class="image" style="background-image: url('images/biciukas.jpg')">
+                                        <div class="image" style="background-image: url('images/People/2.jpg')">
                                         </div>
                                         <div class="avatar-text">
-                                        <h3>John S.</h3>
-                                        <p>Freelancer</p>
+                                        <h3>Uma T.</h3>
+                                        <p>Swords manager</p>
                                     </div>
                                     </div>
                                 </div>
@@ -463,11 +463,11 @@
                                             consectetur adipisicing elit.</p>
                                     </div>
                                     <div class="avatar-container">
-                                        <div class="image" style="background-image: url('images/biciukas.jpg')">
+                                        <div class="image" style="background-image: url('images/People/61.jpg')">
                                         </div>
                                         <div class="avatar-text">
                                         <h3>John S.</h3>
-                                        <p>Freelancer</p>
+                                        <p>Coats salesman</p>
                                     </div>
                                     </div>
                                 </div>
@@ -484,11 +484,11 @@
                                             odio aspernatur ex.</p>
                                     </div>
                                     <div class="avatar-container">
-                                        <div class="image" style="background-image: url('images/biciukas.jpg')">
+                                        <div class="image" style="background-image: url('images/People/17.jpg')">
                                         </div>
                                         <div class="avatar-text">
-                                        <h3>John S.</h3>
-                                        <p>Freelancer</p>
+                                        <h3>Bradd P.</h3>
+                                        <p>Handsome guy</p>
                                     </div>
                                     </div>
                                 </div>
@@ -514,13 +514,13 @@
                     <div class="contact-form">
                         <ul class="formlist">
                             <li>
-                                <input type="text" id="first_name" name="first.name" placeholder="First name" required>
+                                <input type="text" id="first-name-contact" name="first.name" placeholder="First name" required>
                             </li>
                             <li>
-                                <input type="text" id="last_name" name="last.name" placeholder="Last name" required>
+                                <input type="text" id="last-name-contact" name="last.name" placeholder="Last name" required>
                             </li>
                             <li>
-                                <input type="tel" id="phone_number" name="phone.number" placeholder="Phone number" required>    
+                                <input type="tel" id="phone-number-contact" name="phone.number" placeholder="Phone number" required>    
                             
                             </li>
                         </ul>
@@ -541,10 +541,14 @@
                                         <span>COMPANY</span>
                                     </label>
                                 </div>
-                            
                             </form>
                         </div>
-                        <div class="getsend">                        
+                        <div class="error-container">
+                        <p id="error-surname-contact" class="error"></p>
+                        <p id="error-name-contact" class="error"></p>
+                        <p id="error-number-contact" class="error"></p>
+                        </div>
+                        <div class="getsend" type="button" onclick="myFunction4(), myFunction5(), myFunction6()">                        
                             <p>SEND</p>    
                         </div>
                     </div>

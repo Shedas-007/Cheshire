@@ -164,3 +164,17 @@ form {
         text-align: center;
     }
 }
+
+
+.error-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  justify-content: flex-start;
+}
+
+.error {
+  color: red;
+  width: 33%;
+  font-size: 10px;
+}

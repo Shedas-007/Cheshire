@@ -4,7 +4,10 @@ document.getElementById('mobile-menu-trigger').addEventListener('click', functio
     document.getElementById('navigation').classList.toggle('active');
 });
 
-// TODO: paspaudus nuorodą mobile menu, turėtų susiskleisti
+document.getElementById('navigation').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.getElementById('ftrs').classList.toggle('hide');
+});
 
 
 // Tabs section
@@ -69,3 +72,127 @@ const swiper = new Swiper('.reviews-swiper', {
     },
 
   });
+
+
+  // FORM VALIDATION-SUBSCRIPTION
+
+  function myFunction1() {
+    var x, text;
+  
+    x = document.getElementById("first_name").value;
+    if (isNaN(x)) {
+      return true;
+    } 
+    else if (x === "") {
+      text = "Please fill all fields";
+    } 
+    
+    else {
+      text = "Please use only letters on Name and Surname fields";
+    }
+  
+    document.getElementById("error-name").innerHTML = text;
+  
+  }
+  
+  function myFunction2() {
+    var x, text;
+  
+    x = document.getElementById("last_name").value;
+    if (isNaN(x)) {
+      return true;
+    } 
+    else if (x === "") {
+      text = "Please fill all fields";
+    } 
+    
+    else {
+      text = "Please use only letters on Name and Surname fields";
+    }
+  
+    document.getElementById("error-surname").innerHTML = text;
+  
+  }
+  
+  
+  function myFunction3() {
+    var x, text;
+  
+    x = document.getElementById("numb").value;
+    if (isNaN(x)) {
+      text = "Please use numbers on phone field";
+    } 
+    else if (x === "") {
+      text = "Please fill all fields";
+    } 
+    
+    else {
+      text = "";
+    }
+  
+    document.getElementById("error-number").innerHTML = text;
+  
+  }
+
+
+    // FORM VALIDATION-CONTACT
+
+
+    function myFunction4() {
+      var x, text;
+    
+      x = document.getElementById("first-name-contact").value;
+      if (isNaN(x)) {
+        return true;
+      } 
+      else if (x === "") {
+        text = "Please fill all fields";
+      } 
+      
+      else {
+        text = "Please use only letters on Name and Surname fields";
+      }
+    
+      document.getElementById("error-name-contact").innerHTML = text;
+    
+    }
+    
+    function myFunction5() {
+      var x, text;
+    
+      x = document.getElementById("last-name-contact").value;
+      if (isNaN(x)) {
+        return true;
+      } 
+      else if (x === "") {
+        text = "Please fill all fields";
+      } 
+      
+      else {
+        text = "Please use only letters on Name and Surname fields";
+      }
+    
+      document.getElementById("error-surname-contact").innerHTML = text;
+    
+    }
+    
+    
+    function myFunction6() {
+      var x, text;
+    
+      x = document.getElementById("phone-number-contact").value;
+      if (isNaN(x)) {
+        text = "Please use numbers on phone field";
+      } 
+      else if (x === "") {
+        text = "Please fill all fields";
+      } 
+      
+      else {
+        text = "";
+      }
+    
+      document.getElementById("error-number-contact").innerHTML = text;
+    
+    }
+
