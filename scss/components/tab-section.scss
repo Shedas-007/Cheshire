@@ -44,14 +44,14 @@
           }
   
           span {
-            color: #fff;
+            color: var(--white);
             opacity: 0.5;
             transition: 0.3s ease-in-out;
           }
   
           &.active,
           &:hover {
-            background-color: #e27866;
+            background-color: var(--orange);
   
             span {
               opacity: 1;

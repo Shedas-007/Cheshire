@@ -85,7 +85,7 @@ header {
   
       &.active {
         transform: rotate(270deg) scaleX(1.5) scaleY(1.5);
-        background-color: #E27866;
+        background-color: var(--orange);
 
       }
   
@@ -96,7 +96,7 @@ header {
   }
   
   .menu-list li a:hover {
-    color: white;
+    color: var(--white);
     transition: 0.3s;
 }
 
@@ -105,7 +105,7 @@ header {
    position:absolute;
    width: 61px;
    bottom: 0;
-   border-bottom: solid #E27866 2px;
+   border-bottom: solid var(--orange) 2px;
    }
 
 .menu1:hover:before {

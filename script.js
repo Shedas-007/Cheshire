@@ -81,10 +81,10 @@ const swiper = new Swiper('.reviews-swiper', {
   
     x = document.getElementById("first_name").value;
     if (isNaN(x)) {
-      return true;
+      text = "";
     } 
     else if (x === "") {
-      text = "Please fill all fields";
+      text = "Please fill first field";
     } 
     
     else {
@@ -100,10 +100,10 @@ const swiper = new Swiper('.reviews-swiper', {
   
     x = document.getElementById("last_name").value;
     if (isNaN(x)) {
-      return true;
+      text = "";
     } 
     else if (x === "") {
-      text = "Please fill all fields";
+      text = "Please fill second field";
     } 
     
     else {
@@ -123,7 +123,7 @@ const swiper = new Swiper('.reviews-swiper', {
       text = "Please use numbers on phone field";
     } 
     else if (x === "") {
-      text = "Please fill all fields";
+      text = "Please fill third field";
     } 
     
     else {
@@ -143,10 +143,10 @@ const swiper = new Swiper('.reviews-swiper', {
     
       x = document.getElementById("first-name-contact").value;
       if (isNaN(x)) {
-        return true;
+        text = "";
       } 
       else if (x === "") {
-        text = "Please fill all fields";
+        text = "Please fill first field";
       } 
       
       else {
@@ -162,10 +162,10 @@ const swiper = new Swiper('.reviews-swiper', {
     
       x = document.getElementById("last-name-contact").value;
       if (isNaN(x)) {
-        return true;
+        text = "";
       } 
       else if (x === "") {
-        text = "Please fill all fields";
+        text = "Please fill second field";
       } 
       
       else {
@@ -185,7 +185,7 @@ const swiper = new Swiper('.reviews-swiper', {
         text = "Please use numbers on phone field";
       } 
       else if (x === "") {
-        text = "Please fill all fields";
+        text = "Please fill third field";
       } 
       
       else {

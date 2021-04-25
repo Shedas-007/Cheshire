@@ -1,5 +1,12 @@
 :root {
     --dark: #1c1c1c;
+    --orange: #e27866;
+    --blue: #6696E2;
+    --white: #FFFFFF;
+    --gray: #86878B;
+    --green: #41D395;
+    --fontsize-p: 14px;
+    --fontsize-h2: 36px;
     font-family: 'Montserrat', sans-serif;
   }
   
@@ -23,51 +30,14 @@
   @import "Header.scss";
   @import "Hero.scss";
   @import "Features.scss";
-  // @import "components/form";
   @import "components/tab-section.scss";
   @import "components/Response.scss";
-  
-
-
-// body {
-//     margin: 0;
-// }
-
-// .page-wrap {
-//     max-width: 1140px;
-//     width: 100%;
-//     margin: 0 auto;
-//     padding: 0 20px;
-//     box-sizing: border-box;
-//     display: flex;
-//     justify-content: space-between;
-// } 
-
-// @import "colors.scss";
-// @import "Header.scss";
-
-@import "Form.scss";
-@import "Social_media.scss";
-@import "Footer.scss";
-@import "Section4.scss";
-@import "About.scss";
-@import "Subscription.scss";
-@import "tab-section-content.scss";
-@import "Contact.scss";
-
-
-// .container {
-//     max-width: 1140px;
-//     width: 100%;
-//     margin: 0 auto;
-//     padding: 0 20px;
-//     box-sizing: border-box;
-//       display: flex;
-//     justify-content: space-between;
-// } 
-// // Konteineris eina ant virsaus visu sekcijos elementu, kurie turi buti ne iki psl. krasto. tai man sita reikia uzsideti pas save, taip pat kitam scss faile yra .container su display flex ir justify content space between. Ka tai reiskia?
-
-//   .container {
-//     
-//   }
+  @import "Form.scss";
+  @import "Social_media.scss";
+  @import "Footer.scss";
+  @import "Facilities.scss";
+  @import "About.scss";
+  @import "Subscription.scss";
+  @import "tab-section-content.scss";
+  @import "Contact.scss";
 

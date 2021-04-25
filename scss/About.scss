@@ -8,27 +8,21 @@
     
 
     h2 {
-        font-size: 36px;
+        font-size: var(--fontsize-h2);
         position: relative;
         margin: 0;
-        color: #212121;
+        color: var(--dark);
 
         &:after {
-            content: "";
-            width: 64px;
-            position: absolute;
-            margin: auto;
-            bottom: -35px;
-            left: 0;
-            right: 0;
-            border-bottom: 2px #E27866 solid;
+            @include line;
+            color: var(--orange);
           }
     }
 
     p {
-        font-size: 14px;
+        font-size: var(--fontsize-p);
         padding-top: 50px;
-        color: #86878B;
+        color: var(--gray);
     }
 }
 

@@ -1,5 +1,5 @@
 .contact {
-    background-color: #E27866;
+    background-color: var(--orange);
 }
 
 .contact-form-align {
@@ -9,18 +9,14 @@
 
 .contact-form {
     position: relative;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     margin-top: 15px;
     margin-bottom: 50px;
-    // border: red solid 2px;
-    // z-index: 0;
     width: 390px;
     height: 314px;
-    // display: inline-block;
-    // border: 3px solid red;
     border-radius: 5px;
-    box-shadow: 0px 5px 5px #3d3d3d;
+    box-shadow: 0px 5px 5px var(--dark);
 
     @media (max-width: 700px) {
         width: inherit;
@@ -32,7 +28,7 @@
 .getsend {
     display: flex;
     justify-content: center ;
-    background-color: #41D395;
+    background-color: var(--green);
     position: absolute;
     bottom: 32px;
     left: 0;
@@ -44,31 +40,31 @@
     border-radius: 5px;
     
     p {
-        font-size: 15px;
+        font-size: var(--fontsize-p);
         padding: 10px 0;
         margin: 0;
         font-weight: bold;
-        color: white;
+        color: var(--white);
         text-align: center;
     }
 }
 
 
-.bla h2 {
-    // margin: 0;
+.contact-header  {
+    h2 {
     padding-top: 70px;
     padding-bottom: 50px;
-    font-size: 36px;
+    font-size: var(--fontsize-h2);
     font-weight: 600;
     text-align: center;
-    color: white;
+    color: var(--white);
     text-transform: uppercase;
-}
-
-    .bla p {
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    color: white;
-
     }
+
+    p {
+        font-size: var(--fontsize-p);
+        font-weight: 400;
+        text-align: center;
+        color: var(--white);
+    }
+}

@@ -5,6 +5,8 @@
     align-items: center;
 }
 
+// SOCIAL MEDIA LOGO
+
 @mixin social-media-logo {
         width: 30px;
         height: 30px;
@@ -23,3 +25,16 @@
 
         }
     }
+
+    // LINE UNDER SECTIONS HEADERS
+
+    @mixin line {
+            content: "";
+            width: 64px;
+            position: absolute;
+            margin: auto;
+            bottom: -35px;
+            left: 0;
+            right: 0;
+            border-bottom: 2px solid;
+          }

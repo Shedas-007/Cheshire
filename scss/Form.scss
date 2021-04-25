@@ -27,7 +27,7 @@ form {
           height: 13px;
           margin-right: 5px;
           border-radius: 50%;
-          border: 1.5px solid #41d395;
+          border: 1.5px solid var(--green);
           opacity: 0.5;
           transition: 0.3s ease-in-out;
   
@@ -41,7 +41,7 @@ form {
             right: 0;
             bottom: 0;
             margin: auto;
-            background-color: #41d395;
+            background-color: var(--green);
             border-radius: 50%;
             transform-origin: center center;
             transform: scale(0);
@@ -71,24 +71,15 @@ form {
     }
   }
 
-
-//   .container1 {
-//     display: flex;
-//     justify-content: flex-end;
-    
-// }
 .form {
     position: relative;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     margin-top: 15px;
-    // border: red solid 2px;
-    // z-index: 0;
     width: 360px;
     height: 400px;
-    // display: inline-block;
-    // border: 3px solid red;
-    border-radius: 5px; //cia bet koks uzdetas
+
+    border-radius: 5px;
 
     @media (max-width: 700px) {
       width: 95%;
@@ -109,7 +100,7 @@ form {
     font-weight: 500;
 
     span {
-        color:#E27866;
+        color:var(--orange);
         text-transform: uppercase;
     }
 }
@@ -147,7 +138,7 @@ form {
 }
 
 .getstarted {
-    background-color: #41D395;
+    background-color: var(--green);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -160,7 +151,7 @@ form {
         padding-bottom: 10px;
         margin: 0;
         font-weight: bold;
-        color: white;
+        color: var(--white);
         text-align: center;
     }
 }
@@ -168,13 +159,16 @@ form {
 
 .error-container {
   display: flex;
-  flex-direction: row;
-  margin-left: 10px;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .error {
   color: red;
-  width: 33%;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 10px;
   font-size: 10px;
 }

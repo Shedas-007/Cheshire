@@ -1,6 +1,6 @@
 .subscription {
     position: relative;
-    background-color: #6696E2;
+    background-color: var(--blue);
 }
 
 .subscription-header {
@@ -12,27 +12,22 @@
         position: relative;
         margin-top: 90px;
         margin-bottom: 0;
-        font-size: 36px;
-        color: #FFFFFF;
+        font-size: var(--fontsize-h2);
+        color: var(--white);
         font-weight: 500;
 
         &:after {
-            content: "";
-            width: 64px;
-            position: absolute;
-            margin: auto;
+            @include line;
+            color: var(--green);
             bottom: -15px;
-            left: 0;
-            right: 0;
-            border-bottom: 2px #41D395 solid;
           }
     }
 
     p {
-        color: #FFFFFF;
+        color: var(--white);
         margin-top: 30px;
         margin-bottom: 30px;
-        font-size: 14px;
+        font-size: var(--fontsize-p);
         margin-bottom: 0;
     }
 }
@@ -88,7 +83,7 @@
     padding: 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: #41D395 solid 5px;
+    border-bottom: var(--green) solid 5px;
     
 }
 .subscription-container-child {
@@ -96,12 +91,12 @@
     padding-top: 0;
     margin-top: 0;
     border-radius: 5px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     width: 343px;
     margin-bottom: 108px;
 
     h2 {
-        color: white;
+        color: var(--white);
         font-weight: 400;
         font-size: 20px;
         padding-top: 14px;
@@ -109,8 +104,8 @@
     }
 
     p {
-        font-size: 14px;
-        color: #999999;
+        font-size: var(--fontsize-p);
+        color: var(--gray);
         text-transform: uppercase; 
     }
 
@@ -120,7 +115,7 @@
         margin-bottom: 5px;
         font-weight:400;
         padding: 0;
-        color: #FFFFFF;
+        color: var(--white);
 
         span {
             font-size: 30px;
@@ -130,8 +125,8 @@
 
 
 
-.popular {
-    background-color: #41D395;
+.popular-block {
+    background-color: var(--green);
 
     h2 {
         font-size: 14px;

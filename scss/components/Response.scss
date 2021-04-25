@@ -8,11 +8,12 @@
   .response {
     display: flex;
     align-items: flex-start;
+    justify-content: flex-end;
     flex-direction: column;
     margin-bottom: 30px;
   }
   
-  .image {
+  .user-avatar {
     flex-shrink: 0;
     position: relative;
     margin-right: 15px;
@@ -24,7 +25,7 @@
   
   .response-bubble {
     position: relative;
-    background-color: #6696E2;
+    background-color: var(--blue);
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -33,6 +34,14 @@
     @media (max-width: 700px) {
       width: 90%;
       margin-top: -20px;
+    }
+
+    p:first-of-type {
+      margin-top: 0;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
     }
   }
 
@@ -44,24 +53,16 @@
     bottom: -20px;
     width: 15px;
     height: 15px;
-    background-color: #6696E2;
+    background-color: var(--blue);
     transform: translateY(-85%) translateX(-45%) rotate(45deg);
   }
   
   .response-bubble p {
     font-size: 16px;
-    color: #FFFFFF;
+    color: var(--white);
   }
   
 /* cia reikia sudeti i kruva virsuj, kad normaliai atrodytu */
-  
-  .response-bubble p:first-of-type {
-    margin-top: 0;
-  }
-  
-  .response-bubble p:last-of-type {
-    margin-bottom: 0;
-  }
 
   .avatar-container {
       display: flex;
