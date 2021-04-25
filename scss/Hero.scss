@@ -69,10 +69,25 @@
     text-align: left;
     margin-bottom: 0;
 
+    
+
     @media (max-width: 700px) {
       font-size: 20px;
       text-align: center;
     }
+  }
+
+  .hero-content-header h2 {
+    position: relative;
+    &:after {
+      content: "";
+      width: 64px;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      border-bottom: 2px white solid;
+    }
+    
   }
 
   .hero-content-text {
@@ -92,15 +107,14 @@
   }
 
   .hero-content-paragraph {
-    width: 651px;
 
     @media (max-width: 700px) {
       width: 90%;
     }
 
     p {
-      margin-top: 24px;
-      margin-bottom: 33px;
+      margin-top: 33px;
+      margin-bottom: 15px;
       
       @media (max-width: 700px) {
         font-size: 12px;

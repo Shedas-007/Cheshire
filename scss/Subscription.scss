@@ -9,22 +9,27 @@
     text-align: center;
 
     h2 {
+        position: relative;
         margin-top: 90px;
         margin-bottom: 0;
         font-size: 36px;
         color: #FFFFFF;
         font-weight: 500;
-    }
 
-    h4 {
-        color: #41D395;
-        font-size: 30px;
-        margin-top: 0;
-        margin-bottom: 0;
+        &:after {
+            content: "";
+            width: 64px;
+            position: absolute;
+            margin: auto;
+            bottom: -15px;
+            left: 0;
+            right: 0;
+            border-bottom: 2px #41D395 solid;
+          }
     }
 
     p {
-        color: FFFFFF;
+        color: #FFFFFF;
         margin-top: 30px;
         margin-bottom: 30px;
         font-size: 14px;
@@ -42,7 +47,6 @@
 
     @media (max-width: 700px) {
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
       }
 
@@ -54,6 +58,7 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    width: 25%;
 
     @media (max-width: 700px) {
         width: 90%;

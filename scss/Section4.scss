@@ -70,6 +70,7 @@
     background-image: url('images/logo/eye.svg');
     background-repeat: no-repeat;
     background-position: center center;
+    
   }
 
 .image2:after {
@@ -79,10 +80,21 @@
  
 .section4_text_container1 {
   color: #FFFFFF;
+  
 
   h2 {
     font-size: 30px;
+    position: relative;
     margin:0;
+
+    &:after {
+      content: "";
+      width: 200px;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      border-bottom: 2px #E27866 solid;
+    }
   }
 
   span {
@@ -91,7 +103,7 @@
 
   p {
     font-size: 14px;
-    margin-top: 25px;
+    margin-top: 45px;
   }
 
 }

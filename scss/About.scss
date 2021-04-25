@@ -9,12 +9,25 @@
 
     h2 {
         font-size: 36px;
+        position: relative;
         margin: 0;
         color: #212121;
+
+        &:after {
+            content: "";
+            width: 64px;
+            position: absolute;
+            margin: auto;
+            bottom: -35px;
+            left: 0;
+            right: 0;
+            border-bottom: 2px #E27866 solid;
+          }
     }
 
     p {
         font-size: 14px;
+        padding-top: 50px;
         color: #86878B;
     }
 }
@@ -23,6 +36,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: center;
     margin-top: 65px;
     margin-bottom: 122px;
@@ -32,19 +46,13 @@
         align-content: center;
         justify-content: center;
       }
-
 }
-
-  .about h4 {
-      color: #E27866;
-      font-size: 20px;
-  }
 
   .about-features {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 286px;
+      width: 33%;
 
       @media (max-width: 700px) {
         width: 100%;

@@ -104,10 +104,8 @@ header {
    content: '';
    position:absolute;
    width: 61px;
-   // background: #ff3535;
    bottom: 0;
    border-bottom: solid #E27866 2px;
-   // UZVEDUS PELE BLOGAI ZYMISI RAUDONA SPALVA. NEVEIKIA ANT BEFORE MIXIN padaryta su width kiekvieno menu atskirai
    }
 
 .menu1:hover:before {
@@ -133,40 +131,6 @@ header {
    @include mark-menu;
    width: 56px;
 }
-
-
-// header {
-//     // display: flex;
-//     position: fixed;
-//     z-index: 1;
-//     background-color: black;
-//     // justify-content: space-evenly;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 50px;
-// }
-
-// .logo {
-//     position: absolute;
-//     left: 100px;
-//     // logotipas eina ne per visa ploti, o daugiau!
-    
-// }
-
-
-// .menu {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-//     list-style-type: none;
-// }
-    
-// .menu-list li {
-//     padding-right: 1rem;
-//     color: $menu-text-color;
-//     cursor: pointer;
-
      
  
     
