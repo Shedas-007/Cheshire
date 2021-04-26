@@ -107,7 +107,7 @@ const swiper = new Swiper('.reviews-swiper', {
     } 
     
     else {
-      text = "Please use only letters Surname fields";
+      text = "Please use only letters on Surname field";
     }
   
     document.getElementById("error-surname").innerHTML = text;
