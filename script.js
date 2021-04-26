@@ -88,7 +88,7 @@ const swiper = new Swiper('.reviews-swiper', {
     } 
     
     else {
-      text = "Please use only letters on Name and Surname fields";
+      text = "Please use only letters on First name field";
     }
   
     document.getElementById("error-name").innerHTML = text;
@@ -107,7 +107,7 @@ const swiper = new Swiper('.reviews-swiper', {
     } 
     
     else {
-      text = "Please use only letters on Name and Surname fields";
+      text = "Please use only letters Surname fields";
     }
   
     document.getElementById("error-surname").innerHTML = text;
@@ -150,7 +150,7 @@ const swiper = new Swiper('.reviews-swiper', {
       } 
       
       else {
-        text = "Please use only letters on Name and Surname fields";
+        text = "Please use only letters on First name field";
       }
     
       document.getElementById("error-name-contact").innerHTML = text;
@@ -169,7 +169,7 @@ const swiper = new Swiper('.reviews-swiper', {
       } 
       
       else {
-        text = "Please use only letters on Name and Surname fields";
+        text = "Please use only letters on Surname field";
       }
     
       document.getElementById("error-surname-contact").innerHTML = text;
